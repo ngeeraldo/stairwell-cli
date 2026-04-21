@@ -25,8 +25,16 @@
     "cli",
     "setup"
   ],
-  "author": "",
+  "author": "nico@opitas.io",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngeeraldo/stairwell-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ngeeraldo/stairwell-cli/issues"
+  },
+  "homepage": "https://github.com/ngeeraldo/stairwell-cli#readme",
   "dependencies": {
     "commander": "^12.1.0",
     "picocolors": "^1.1.1"
