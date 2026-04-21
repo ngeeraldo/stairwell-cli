@@ -1,0 +1,36 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/tmp/fixture-workspace"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "FIXTURE_GATEWAY_TOKEN_NOT_A_REAL_SECRET"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-21T14:51:21.017Z",
+    "lastRunVersion": "2026.4.15",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.15",
+    "lastTouchedAt": "2026-04-21T14:51:22.630Z"
+  }
+}
