@@ -91,7 +91,6 @@ function runInit(opts: InitOpts): void {
   success(`Stairwell added to ${configPath}`);
   success(`Provider  : models.providers.${PROVIDER_ID}`);
   success(`Default   : agents.defaults.model.primary = ${model}`);
-  info("\nNext step: run `openclaw chat` to start using Stairwell.");
 }
 
 function handleError(err: unknown): never {
