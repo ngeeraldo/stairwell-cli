@@ -1,6 +1,6 @@
 {
   "name": "stairwell",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "One-shot CLI that wires Stairwell into OpenClaw.",
   "type": "module",
   "bin": {

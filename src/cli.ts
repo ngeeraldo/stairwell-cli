@@ -91,6 +91,7 @@ function runInit(opts: InitOpts): void {
   success(`Stairwell added to ${configPath}`);
   success(`Provider  : models.providers.${PROVIDER_ID}`);
   success(`Default   : agents.defaults.model.primary = ${model}`);
+  info("\nYou're good to go — return to the Stairwell dashboard to continue.");
 }
 
 function handleError(err: unknown): never {
