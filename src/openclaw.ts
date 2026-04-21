@@ -78,14 +78,14 @@ export function quoteForDisplay(arg: string): string {
 }
 
 export function assertOpenclawInstalled(): void {
-  const which = spawnSync("which", ["openclaw"], { encoding: "utf8" });
-  if (which.status !== 0 || !which.stdout.trim()) {
+  const probe = spawnSync("openclaw", ["--version"], { encoding: "utf8" });
+  if (probe.error && (probe.error as NodeJS.ErrnoException).code === "ENOENT") {
     throw new OpenclawError(
       "openclaw binary not found on PATH. Install OpenClaw and re-run.",
       3,
     );
   }
-  verbose(`found openclaw at ${which.stdout.trim()}`);
+  verbose(`openclaw --version exit=${probe.status ?? "unknown"}`);
 }
 
 export function expandHome(p: string): string {
